@@ -1,6 +1,6 @@
 
 #include <iostream>
-#include "task2.cpp"
+#include <task2.cpp>
 
 unsigned long long sumPrime(unsigned int hbound) {
 	unsigned int i;
