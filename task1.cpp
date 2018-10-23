@@ -1,4 +1,4 @@
-#include "pch.h"
+
 #include <iostream>
 
 unsigned long NOK(unsigned long long x, long y) {
