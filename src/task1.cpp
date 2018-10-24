@@ -1,14 +1,17 @@
 #include <iostream>
 
-unsigned long NOK(unsigned long long x, long y) {
+unsigned long NOK(unsigned int x, unsigned y) {
 	long long a = x;
 	long b = y;
 	long res;
-	while (x != y) {
-		if (x > y) {
+	while (x != y) 
+	{
+		if (x > y)
+		{
 			x = x - y;
 		}
-		else {
+		else 
+		{
 			y = y - x;
 		}
 	}
@@ -22,7 +25,8 @@ unsigned long findValue(unsigned int min, unsigned max)
 	long res;
 	k = min + 2;
 	res = NOK(min, min++);
-	for (int g = k; g <= max; g++) {
+	for (int g = k; g <= max; g++)
+	{
 		res = NOK(res, g);
 	}
 	return res;
