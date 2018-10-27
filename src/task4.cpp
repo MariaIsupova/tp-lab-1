@@ -1,7 +1,7 @@
-#include "task4.h"
+
 #include <iostream>
 #include "task4.h"
-
+#include <cstring> 
 using namespace std;
 
 char * sum(char *x, char *y) {
