@@ -13,7 +13,7 @@ void split(char ***result, int *N, const char *buf, char ch)
 		if (ch == buf[i]) ++count;
 	}
 	char *str = new char[k + 1];
-	(*result) = (char **)malloc((count + 1) * sizeof(char *));
+	*result = new char*[count];
 	(*result)[0] = str;
 	k = 0;
 	count = 1;

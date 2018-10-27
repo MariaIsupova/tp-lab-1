@@ -1,4 +1,5 @@
 #include <iostream>
+#include "task1.h"
 
 unsigned long NOK(unsigned int x, unsigned y) {
 	long long a = x;
