@@ -1,5 +1,6 @@
 #include <iostream>
 #include "task2.h"
+#include <cmath>
 bool checkPrime(unsigned value) {
 
 	if (value < 2) return false;
