@@ -1,26 +1,17 @@
 #include <iostream>
 #include "task2.h"
+bool checkPrime(unsigned value) {
 
-bool checkPrime(unsigned int value) 
-{
-	unsigned int k;
-	int count = 0;
-	for (k = 1; k <= value; k++) 
-	{
-		if (value%k == 0) 
-		{
-			count++;
-		}
+	if (value < 2) return false;
+	if (value == 2) return true;
+	if (value % 2 == 0) return false;
+ 	
+ 	for (long long k = 3; k <= sqrt(value); k += 2) {
+		if ((value % k) == 0) return false;
 	}
-	if (count == 2) 
-	{
-		return true;
-	}
-	else 
-	{
-		return false;
-	}
+	return true;
 }
+
 unsigned long long nPrime(unsigned n)
 {
 	unsigned int value = 1;
